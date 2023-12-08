@@ -1,0 +1,149 @@
+{
+    "report_meta": {
+        "scan_target": "files",
+        "scanned": [
+            "requirements.txt"
+        ],
+        "policy_file": null,
+        "policy_file_source": "local",
+        "api_key": false,
+        "local_database_path": null,
+        "safety_version": "2.3.5",
+        "packages_found": 25,
+        "vulnerabilities_found": 0,
+        "vulnerabilities_ignored": 0,
+        "remediations_recommended": 0,
+        "telemetry": {
+            "os_type": "Linux",
+            "os_release": "5.4.0-144-generic",
+            "os_description": "Linux-5.4.0-144-generic-x86_64-with-glibc2.29",
+            "python_version": "3.8.10",
+            "safety_command": "check",
+            "safety_options": {
+                "files": {
+                    "-r": 1
+                },
+                "output": {
+                    "--output": 1
+                }
+            },
+            "safety_version": "2.3.5",
+            "safety_source": "cli"
+        },
+        "git": {
+            "branch": "main",
+            "tag": "",
+            "commit": "e80f6e68cce04ac1007e56407535eb3bc38aa4a8",
+            "dirty": true,
+        },
+        "project": null,
+        "json_version": 1
+    },
+    "scanned_packages": {
+        "asgiref": {
+            "name": "asgiref",
+            "version": "3.6.0"
+        },
+        "backports.zoneinfo": {
+            "name": "backports.zoneinfo",
+            "version": "0.2.1"
+        },
+        "bleach": {
+            "name": "bleach",
+            "version": "6.0.0"
+        },
+        "crispy-bootstrap4": {
+            "name": "crispy-bootstrap4",
+            "version": "2022.1"
+        },
+        "Django": {
+            "name": "Django",
+            "version": "4.2"
+        },
+        "django-crispy-forms": {
+            "name": "django-crispy-forms",
+            "version": "2.0"
+        },
+        "django-extensions": {
+            "name": "django-extensions",
+            "version": "3.2.1"
+        },
+        "django-filter": {
+            "name": "django-filter",
+            "version": "23.2"
+        },
+        "django-guardian": {
+            "name": "django-guardian",
+            "version": "2.4.0"
+        },
+        "django-markdownx": {
+            "name": "django-markdownx",
+            "version": "4.0.2"
+        },
+        "django-ranged-response": {
+            "name": "django-ranged-response",
+            "version": "0.2.0"
+        },
+        "django-simple-captcha": {
+            "name": "django-simple-captcha",
+            "version": "0.5.17"
+        },
+        "django-summernote": {
+            "name": "django-summernote",
+            "version": "0.8.20.0"
+        },
+        "djangorestframework": {
+            "name": "djangorestframework",
+            "version": "3.14.0"
+        },
+        "gunicorn": {
+            "name": "gunicorn",
+            "version": "20.1.0"
+        },
+        "importlib-metadata": {
+            "name": "importlib-metadata",
+            "version": "6.6.0"
+        },
+        "Markdown": {
+            "name": "Markdown",
+            "version": "3.4.3"
+        },
+        "Pillow": {
+            "name": "Pillow",
+            "version": "9.5.0"
+        },
+        "psycopg2-binary": {
+            "name": "psycopg2-binary",
+            "version": "2.9.6"
+        },
+        "python-dotenv": {
+            "name": "python-dotenv",
+            "version": "1.0.0"
+        },
+        "pytz": {
+            "name": "pytz",
+            "version": "2023.3"
+        },
+        "six": {
+            "name": "six",
+            "version": "1.16.0"
+        },
+        "sqlparse": {
+            "name": "sqlparse",
+            "version": "0.4.4"
+        },
+        "webencodings": {
+            "name": "webencodings",
+            "version": "0.5.1"
+        },
+        "zipp": {
+            "name": "zipp",
+            "version": "3.15.0"
+        }
+    },
+    "affected_packages": {},
+    "announcements": [],
+    "vulnerabilities": [],
+    "ignored_vulnerabilities": [],
+    "remediations": {}
+}

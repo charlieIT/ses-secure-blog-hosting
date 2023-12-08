@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link href="ZAP%20Scanning%20Report_files/normalize.css" rel="stylesheet">
+<link href="ZAP%20Scanning%20Report_files/main.css" rel="stylesheet">
+<link href="ZAP%20Scanning%20Report_files/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org/"><img src="ZAP%20Scanning%20Report_files/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Thu 25 May 2023, at 01:20:48</span>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a href="#summaries">Summaries</a>
+						<ol>
+							<li><a href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span class="risk-level">Medium</span>, <span>Confidence</span>=<span class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							<li><a href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span class="risk-level">Low</span>, <span>Confidence</span>=<span class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span class="risk-level">Low</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span class="risk-level">Informational</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a href="#appendix">Appendix</a>
+						<ol>
+							<li><a href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://127.0.0.1:8000</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a 
+percentage of the total number of alerts included in the report, rounded
+ to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col style="width: 14.0%"><col style="width: 14.0%"><col style="width: 14.0%"><col style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(60.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of "False Positive" have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col style="width: 16.25%"><col style="width: 16.25%"><col style="width: 16.25%"><col style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="1">Site</th>
+							<th scope="row">http://127.0.0.1:8000</th>
+							
+							<td><span>0</span><br> <span class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(1)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(4)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(5)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type's risk level.</p>
+						<p>(The percentages in brackets represent each count as a 
+percentage, rounded to one decimal place, of the total number of alerts 
+included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>26</span><br> <span class="additional-info-percentages">(520.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="#alert-type-1">Cookie No HttpOnly Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>11</span><br> <span class="additional-info-percentages">(220.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="#alert-type-2">Cross-Domain JavaScript Source File Inclusion</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>13</span><br> <span class="additional-info-percentages">(260.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="#alert-type-3">Server Leaks Version Information via "Server" HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>38</span><br> <span class="additional-info-percentages">(760.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="#alert-type-4">Modern Web Application</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>13</span><br> <span class="additional-info-percentages">(260.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">Medium</span>, <span>Confidence</span>=<span class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1:8000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1:8000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that 
+helps to detect and mitigate certain types of attacks, including Cross 
+Site Scripting (XSS) and data injection attacks. These attacks are used 
+for everything from data theft to site defacement or distribution of 
+malware. CSP provides a set of standard HTTP headers that allow website 
+owners to declare approved sources of content that browsers should be 
+allowed to load on that page — covered types are JavaScript, CSS, HTML 
+frames, fonts, images and embeddable objects such as Java applets, 
+ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (197 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1:8000 HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (304 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 24 May 2023 22:58:15 GMT
+Server: WSGIServer/0.2 CPython/3.8.10
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 8381
+Vary: Cookie
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (8381 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Secure Blog&lt;/title&gt;
+
+    &lt;link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"&gt;
+    &lt;meta name="google" content="notranslate" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"&gt;
+    &lt;link rel="stylesheet" href="/static/css/base.css"&gt;
+    &lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;
+    
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;style&gt;
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+      }
+
+    .shadow{
+           box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+       }
+      .btn-danger {
+        color: #fff;
+        background-color: #f00000;
+        border-color: #dc281e;
+      }
+     
+     .masthead {
+              /*background:#3398E1;*/
+              background: #3c6785;
+              height: auto;
+              padding-bottom: 15px;
+              box-shadow: 0 16px 48px #E3E7EB;
+              padding-top: 10px;
+    }
+    &lt;/style&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav"&gt;
+      &lt;div class="container-fluid"&gt;
+        &lt;a class="navbar-brand" href="/"&gt;Secure Blog&lt;/a&gt;
+        &lt;button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        &gt;
+          &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+       
+        &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+          &lt;ul class="navbar-nav ml-auto"&gt;
+            
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;About&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;Policy&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;FAQ&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                
+                
+&lt;a class="nav-link text-black" href="/login"&gt;
+    &lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+                
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/nav&gt;
+    
+
+            
+&lt;style&gt;
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text{
+    color: white;
+  }
+    .card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+&lt;/style&gt;
+
+    &lt;header class="masthead" &gt;
+            &lt;div class="overlay"&gt;&lt;/div&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class=" col-md-8 col-md-10 mx-auto"&gt;
+                  &lt;div class="site-heading"&gt;
+                    &lt;h3 class=" site-heading my-4 mt-3 text-white"&gt;
+                      Welcome to our SecDevOps!
+                    &lt;/h3&gt;
+                    &lt;p class="text-light"&gt;
+                      An unique insight into our projects and R&amp;D efforts ...
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;/header&gt;
+        
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+      
+              &lt;!-- Blog Entries Column --&gt;
+              &lt;div class="col-md-8 mt-3 left"&gt;
+                    
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;ABCD&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By abcd&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;Hi I'm ABCD&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/abcd/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;markdown 2&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;this is Markdown&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/markdown-2/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Markdown&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;this should be markdown&lt;/p&gt;
+&lt;p&gt;| ID | Value&lt;/p&gt;
+&lt;p&gt;|--- | -------&lt;/p&gt;
+&lt;p&gt;| 1 | Teste&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/markdown/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Image post&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/5f5eb6f9-8759-413e-ba1e-2d0c1c45404e.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/image-post/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste abstract&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;Teste abstract Text&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/1f0b7e80-c289-40fa-aca1-76f4f6b99572.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/teste-abstract/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste Summernote&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/teste-summernote/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Home&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/home/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+                
+                
+
+&lt;style&gt;
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+&lt;/style&gt;
+
+&lt;!-- Sidebar Widgets Column --&gt;
+&lt;div class="col-md-4 float-right "&gt;
+&lt;div class="card my-4"&gt;
+        &lt;h5 class="card-header"&gt;&lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;&amp;nbsp; About Secure Blog&lt;/h5&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt; 
+            This is Secure Blogging platform developed as a project on 
+            Secure Software Development!
+        &lt;/p&gt;
+        &lt;a href="https://github.com/charlieIT/secure-blog-hosting-poc"
+            target="_blank"
+           class="btn btn-danger"&gt;Check the documentation!&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+    &lt;!-- Footer --&gt;
+    &lt;footer class="py-3 bg-grey"&gt;
+              &lt;p class="m-0 text-dark text-center "&gt;SES@M:SI&lt;/p&gt;
+    &lt;/footer&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">Low</span>, <span>Confidence</span>=<span class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1:8000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="#alert-type-3">Server Leaks Version Information via "Server" HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1:8000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the 
+"Server" HTTP response header. Access to such information may facilitate
+ attackers identifying other vulnerabilities your web/application server
+ is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (197 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1:8000 HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (304 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 24 May 2023 22:58:15 GMT
+Server: WSGIServer/0.2 CPython/3.8.10
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 8381
+Vary: Cookie
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (8381 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Secure Blog&lt;/title&gt;
+
+    &lt;link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"&gt;
+    &lt;meta name="google" content="notranslate" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"&gt;
+    &lt;link rel="stylesheet" href="/static/css/base.css"&gt;
+    &lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;
+    
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;style&gt;
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+      }
+
+    .shadow{
+           box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+       }
+      .btn-danger {
+        color: #fff;
+        background-color: #f00000;
+        border-color: #dc281e;
+      }
+     
+     .masthead {
+              /*background:#3398E1;*/
+              background: #3c6785;
+              height: auto;
+              padding-bottom: 15px;
+              box-shadow: 0 16px 48px #E3E7EB;
+              padding-top: 10px;
+    }
+    &lt;/style&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav"&gt;
+      &lt;div class="container-fluid"&gt;
+        &lt;a class="navbar-brand" href="/"&gt;Secure Blog&lt;/a&gt;
+        &lt;button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        &gt;
+          &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+       
+        &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+          &lt;ul class="navbar-nav ml-auto"&gt;
+            
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;About&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;Policy&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;FAQ&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                
+                
+&lt;a class="nav-link text-black" href="/login"&gt;
+    &lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+                
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/nav&gt;
+    
+
+            
+&lt;style&gt;
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text{
+    color: white;
+  }
+    .card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+&lt;/style&gt;
+
+    &lt;header class="masthead" &gt;
+            &lt;div class="overlay"&gt;&lt;/div&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class=" col-md-8 col-md-10 mx-auto"&gt;
+                  &lt;div class="site-heading"&gt;
+                    &lt;h3 class=" site-heading my-4 mt-3 text-white"&gt;
+                      Welcome to our SecDevOps!
+                    &lt;/h3&gt;
+                    &lt;p class="text-light"&gt;
+                      An unique insight into our projects and R&amp;D efforts ...
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;/header&gt;
+        
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+      
+              &lt;!-- Blog Entries Column --&gt;
+              &lt;div class="col-md-8 mt-3 left"&gt;
+                    
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;ABCD&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By abcd&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;Hi I'm ABCD&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/abcd/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;markdown 2&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;this is Markdown&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/markdown-2/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Markdown&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;this should be markdown&lt;/p&gt;
+&lt;p&gt;| ID | Value&lt;/p&gt;
+&lt;p&gt;|--- | -------&lt;/p&gt;
+&lt;p&gt;| 1 | Teste&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/markdown/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Image post&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/5f5eb6f9-8759-413e-ba1e-2d0c1c45404e.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/image-post/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste abstract&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;Teste abstract Text&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/1f0b7e80-c289-40fa-aca1-76f4f6b99572.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/teste-abstract/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste Summernote&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/teste-summernote/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Home&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/home/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+                
+                
+
+&lt;style&gt;
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+&lt;/style&gt;
+
+&lt;!-- Sidebar Widgets Column --&gt;
+&lt;div class="col-md-4 float-right "&gt;
+&lt;div class="card my-4"&gt;
+        &lt;h5 class="card-header"&gt;&lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;&amp;nbsp; About Secure Blog&lt;/h5&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt; 
+            This is Secure Blogging platform developed as a project on 
+            Secure Software Development!
+        &lt;/p&gt;
+        &lt;a href="https://github.com/charlieIT/secure-blog-hosting-poc"
+            target="_blank"
+           class="btn btn-danger"&gt;Check the documentation!&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+    &lt;!-- Footer --&gt;
+    &lt;footer class="py-3 bg-grey"&gt;
+              &lt;p class="m-0 text-dark text-center "&gt;SES@M:SI&lt;/p&gt;
+    &lt;/footer&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>WSGIServer/0.2 CPython/3.8.10</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. 
+is configured to suppress the "Server" header or provide generic 
+details.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">Low</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1:8000</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="#alert-type-1">Cookie No HttpOnly Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1:8000/image-post/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the HttpOnly flag, which means that the
+ cookie can be accessed by JavaScript. If a malicious script can be run 
+on this page then the cookie will be accessible and can be transmitted 
+to another site. If this is a session cookie then session hijacking may 
+be possible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (241 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1:8000/image-post/ HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://127.0.0.1:8000
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (439 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 24 May 2023 22:58:18 GMT
+Server: WSGIServer/0.2 CPython/3.8.10
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Content-Length: 4649
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Set-Cookie: csrftoken=9x7lzC5wu18aXwgnw05beaVZ5HwGl82Q; expires=Wed, 22 May 2024 22:58:18 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4649 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Secure Blog&lt;/title&gt;
+
+    &lt;link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"&gt;
+    &lt;meta name="google" content="notranslate" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"&gt;
+    &lt;link rel="stylesheet" href="/static/css/base.css"&gt;
+    &lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;
+    
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;style&gt;
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+      }
+
+    .shadow{
+           box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+       }
+      .btn-danger {
+        color: #fff;
+        background-color: #f00000;
+        border-color: #dc281e;
+      }
+     
+     .masthead {
+              /*background:#3398E1;*/
+              background: #3c6785;
+              height: auto;
+              padding-bottom: 15px;
+              box-shadow: 0 16px 48px #E3E7EB;
+              padding-top: 10px;
+    }
+    &lt;/style&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav"&gt;
+      &lt;div class="container-fluid"&gt;
+        &lt;a class="navbar-brand" href="/"&gt;Secure Blog&lt;/a&gt;
+        &lt;button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        &gt;
+          &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+       
+        &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+          &lt;ul class="navbar-nav ml-auto"&gt;
+            
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;About&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;Policy&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;FAQ&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                
+                
+&lt;a class="nav-link text-black" href="/login"&gt;
+    &lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+                
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/nav&gt;
+    
+
+            
+
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-12 card mb-4  mt-3 left  top"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h1&gt; Image post &lt;/h1&gt;
+        &lt;p class=" text-muted"&gt;admin | May 12, 2023, 12:23 p.m.&lt;/p&gt;
+        &lt;p class="card-text "&gt;&lt;p&gt;This is content!&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="col-md-6 card mb-4  mt-3 "&gt;
+      &lt;div class="card-body"&gt;
+        &lt;!-- comments --&gt;
+        &lt;h4&gt;0 comments&lt;/h4&gt;
+
+        
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-6 card mb-4  mt-3 "&gt;
+      &lt;div class="card-body"&gt;
+        
+        &lt;h3&gt;Leave a comment&lt;/h3&gt;
+        &lt;form method="post" style="margin-top: 1.3em;"&gt;
+          &lt;p&gt;
+    &lt;label for="id_comment"&gt;Comment:&lt;/label&gt;
+    &lt;textarea name="comment" cols="40" rows="10" required id="id_comment"&gt;
+&lt;/textarea&gt;
+    
+    
+  &lt;/p&gt;
+
+  
+  &lt;p&gt;
+    &lt;label for="id_captcha_1"&gt;Captcha:&lt;/label&gt;
+    &lt;img src="/captcha/image/408fa402684daab91f0a7d50c2f4cd2c420eaa86/" alt="captcha" class="captcha" /&gt;
+&lt;input type="hidden" name="captcha_0" value="408fa402684daab91f0a7d50c2f4cd2c420eaa86" required id="id_captcha_0"&gt;&lt;input type="text" name="captcha_1" required id="id_captcha_1" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"&gt;
+    
+    
+      
+    
+  &lt;/p&gt;
+          &lt;input type="hidden" name="csrfmiddlewaretoken" value="p9YXgV5TctCpNmbNfjDQKGOb9ajEqTv8owV8Fn0fwkApAIh0B9yROGz04HFaBRnO"&gt;
+          &lt;button type="submit" class="btn btn-primary  btn-lg"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+        
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+    
+    &lt;!-- Footer --&gt;
+    &lt;footer class="py-3 bg-grey"&gt;
+              &lt;p class="m-0 text-dark text-center "&gt;SES@M:SI&lt;/p&gt;
+    &lt;/footer&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>csrftoken</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: csrftoken</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the HttpOnly flag is set for all cookies.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="#alert-type-2">Cross-Domain JavaScript Source File Inclusion</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1:8000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The page includes one or more script files from a third-party domain.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (197 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1:8000 HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (304 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 24 May 2023 22:58:15 GMT
+Server: WSGIServer/0.2 CPython/3.8.10
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 8381
+Vary: Cookie
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (8381 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Secure Blog&lt;/title&gt;
+
+    &lt;link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"&gt;
+    &lt;meta name="google" content="notranslate" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"&gt;
+    &lt;link rel="stylesheet" href="/static/css/base.css"&gt;
+    &lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;
+    
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;style&gt;
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+      }
+
+    .shadow{
+           box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+       }
+      .btn-danger {
+        color: #fff;
+        background-color: #f00000;
+        border-color: #dc281e;
+      }
+     
+     .masthead {
+              /*background:#3398E1;*/
+              background: #3c6785;
+              height: auto;
+              padding-bottom: 15px;
+              box-shadow: 0 16px 48px #E3E7EB;
+              padding-top: 10px;
+    }
+    &lt;/style&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav"&gt;
+      &lt;div class="container-fluid"&gt;
+        &lt;a class="navbar-brand" href="/"&gt;Secure Blog&lt;/a&gt;
+        &lt;button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        &gt;
+          &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+       
+        &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+          &lt;ul class="navbar-nav ml-auto"&gt;
+            
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;About&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;Policy&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;FAQ&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                
+                
+&lt;a class="nav-link text-black" href="/login"&gt;
+    &lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+                
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/nav&gt;
+    
+
+            
+&lt;style&gt;
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text{
+    color: white;
+  }
+    .card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+&lt;/style&gt;
+
+    &lt;header class="masthead" &gt;
+            &lt;div class="overlay"&gt;&lt;/div&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class=" col-md-8 col-md-10 mx-auto"&gt;
+                  &lt;div class="site-heading"&gt;
+                    &lt;h3 class=" site-heading my-4 mt-3 text-white"&gt;
+                      Welcome to our SecDevOps!
+                    &lt;/h3&gt;
+                    &lt;p class="text-light"&gt;
+                      An unique insight into our projects and R&amp;D efforts ...
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;/header&gt;
+        
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+      
+              &lt;!-- Blog Entries Column --&gt;
+              &lt;div class="col-md-8 mt-3 left"&gt;
+                    
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;ABCD&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By abcd&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;Hi I'm ABCD&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/abcd/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;markdown 2&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;this is Markdown&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/markdown-2/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Markdown&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;this should be markdown&lt;/p&gt;
+&lt;p&gt;| ID | Value&lt;/p&gt;
+&lt;p&gt;|--- | -------&lt;/p&gt;
+&lt;p&gt;| 1 | Teste&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/markdown/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Image post&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/5f5eb6f9-8759-413e-ba1e-2d0c1c45404e.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/image-post/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste abstract&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;Teste abstract Text&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/1f0b7e80-c289-40fa-aca1-76f4f6b99572.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/teste-abstract/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste Summernote&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/teste-summernote/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Home&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/home/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+                
+                
+
+&lt;style&gt;
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+&lt;/style&gt;
+
+&lt;!-- Sidebar Widgets Column --&gt;
+&lt;div class="col-md-4 float-right "&gt;
+&lt;div class="card my-4"&gt;
+        &lt;h5 class="card-header"&gt;&lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;&amp;nbsp; About Secure Blog&lt;/h5&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt; 
+            This is Secure Blogging platform developed as a project on 
+            Secure Software Development!
+        &lt;/p&gt;
+        &lt;a href="https://github.com/charlieIT/secure-blog-hosting-poc"
+            target="_blank"
+           class="btn btn-danger"&gt;Check the documentation!&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+    &lt;!-- Footer --&gt;
+    &lt;footer class="py-3 bg-grey"&gt;
+              &lt;p class="m-0 text-dark text-center "&gt;SES@M:SI&lt;/p&gt;
+    &lt;/footer&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure JavaScript source files are loaded from only trusted sources, 
+and the sources can't be controlled by end users of the application.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span class="risk-level">Informational</span>, <span>Confidence</span>=<span class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://127.0.0.1:8000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="#alert-type-4">Modern Web Application</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://127.0.0.1:8000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need 
+to explore it automatically then the Ajax Spider may well be more 
+effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Links have been found that do not have traditional href attributes, 
+which is an indication that this is a modern web application.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (197 bytes)</summary>
+				
+				<pre><code>GET http://127.0.0.1:8000 HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (304 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 24 May 2023 22:58:15 GMT
+Server: WSGIServer/0.2 CPython/3.8.10
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 8381
+Vary: Cookie
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (8381 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Secure Blog&lt;/title&gt;
+
+    &lt;link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"&gt;
+    &lt;meta name="google" content="notranslate" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"&gt;
+    &lt;link rel="stylesheet" href="/static/css/base.css"&gt;
+    &lt;script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"&gt;&lt;/script&gt;
+    
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;style&gt;
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+      }
+
+    .shadow{
+           box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+       }
+      .btn-danger {
+        color: #fff;
+        background-color: #f00000;
+        border-color: #dc281e;
+      }
+     
+     .masthead {
+              /*background:#3398E1;*/
+              background: #3c6785;
+              height: auto;
+              padding-bottom: 15px;
+              box-shadow: 0 16px 48px #E3E7EB;
+              padding-top: 10px;
+    }
+    &lt;/style&gt;
+
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav"&gt;
+      &lt;div class="container-fluid"&gt;
+        &lt;a class="navbar-brand" href="/"&gt;Secure Blog&lt;/a&gt;
+        &lt;button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        &gt;
+          &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+       
+        &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+          &lt;ul class="navbar-nav ml-auto"&gt;
+            
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;About&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;Policy&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item text-black"&gt;
+              &lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;FAQ&lt;/a
+              &gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                
+                
+&lt;a class="nav-link text-black" href="/login"&gt;
+    &lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+                
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/nav&gt;
+    
+
+            
+&lt;style&gt;
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+
+    .head_text{
+    color: white;
+  }
+    .card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+&lt;/style&gt;
+
+    &lt;header class="masthead" &gt;
+            &lt;div class="overlay"&gt;&lt;/div&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class=" col-md-8 col-md-10 mx-auto"&gt;
+                  &lt;div class="site-heading"&gt;
+                    &lt;h3 class=" site-heading my-4 mt-3 text-white"&gt;
+                      Welcome to our SecDevOps!
+                    &lt;/h3&gt;
+                    &lt;p class="text-light"&gt;
+                      An unique insight into our projects and R&amp;D efforts ...
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;/header&gt;
+        
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+      
+              &lt;!-- Blog Entries Column --&gt;
+              &lt;div class="col-md-8 mt-3 left"&gt;
+                    
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;ABCD&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By abcd&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;Hi I'm ABCD&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/abcd/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;markdown 2&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;h1&gt;this is Markdown&lt;/h1&gt;&lt;/p&gt;
+                    &lt;a href="/markdown-2/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Markdown&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;this should be markdown&lt;/p&gt;
+&lt;p&gt;| ID | Value&lt;/p&gt;
+&lt;p&gt;|--- | -------&lt;/p&gt;
+&lt;p&gt;| 1 | Teste&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/markdown/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Image post&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/5f5eb6f9-8759-413e-ba1e-2d0c1c45404e.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/image-post/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste abstract&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;p&gt;Teste abstract Text&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 450px;" src="/media/django-summernote/2023-05-12/1f0b7e80-c289-40fa-aca1-76f4f6b99572.png"&gt;&lt;br&gt;&lt;/p&gt;&lt;/p&gt;
+                    &lt;a href="/teste-abstract/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Teste Summernote&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/teste-summernote/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+                &lt;div class="card mb-4" &gt;
+                  &lt;div class="card-body"&gt;
+                    &lt;h2 class="card-title"&gt;Home&lt;/h2&gt;
+                    &lt;p class="card-text text-muted h6"&gt;By admin&lt;/p&gt;
+
+                    &lt;p class="card-text"&gt;&lt;/p&gt;
+                    &lt;a href="/home/" class="btn btn-primary"&gt;Read More &amp;rarr;&lt;/a&gt;
+                  &lt;/div&gt;
+                 
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+                
+                
+
+&lt;style&gt;
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+&lt;/style&gt;
+
+&lt;!-- Sidebar Widgets Column --&gt;
+&lt;div class="col-md-4 float-right "&gt;
+&lt;div class="card my-4"&gt;
+        &lt;h5 class="card-header"&gt;&lt;i class="bi bi-shield-lock"&gt;&lt;/i&gt;&amp;nbsp; About Secure Blog&lt;/h5&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt; 
+            This is Secure Blogging platform developed as a project on 
+            Secure Software Development!
+        &lt;/p&gt;
+        &lt;a href="https://github.com/charlieIT/secure-blog-hosting-poc"
+            target="_blank"
+           class="btn btn-danger"&gt;Check the documentation!&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+    &lt;!-- Footer --&gt;
+    &lt;footer class="py-3 bg-grey"&gt;
+              &lt;p class="m-0 text-dark text-center "&gt;SES@M:SI&lt;/p&gt;
+    &lt;/footer&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;a
+                class="nav-link text-black"
+                href="#"
+                &gt;About&lt;/a
+              &gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert and so no changes are required.</p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-1">
+						<h4>Cookie No HttpOnly Flag</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/10010/">Cookie No HttpOnly Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-2">
+						<h4>Cross-Domain JavaScript Source File Inclusion</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/10017/">Cross-Domain JavaScript Source File Inclusion</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</tbody></table>
+					</li>
+					<li id="alert-type-3">
+						<h4>Server Leaks Version Information via "Server" HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a href="http://httpd.apache.org/docs/current/mod/core.html#servertokens">http://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</a></li>
+										<li><a href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-4">
+						<h4>Modern Web Application</h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a href="https://www.zaproxy.org/docs/alerts/10109/">Modern Web Application</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</tbody></table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+
+
+
+
+
+</body></html>

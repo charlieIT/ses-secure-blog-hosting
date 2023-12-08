@@ -1,0 +1,41 @@
+services:
+
+  #secureblog_gunicorn:
+  #  volumes:
+  #    - static:/static
+  #  env_file:
+  #    - .env
+  #  build:
+  #    context: .
+  #  ports:
+  #    - "8000:8000"
+
+  postgres:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - .env
+
+  secureblog:
+    build: .
+    #command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/secureblog
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    extra_hosts:
+      - "secureblog.com:127.0.0.1"
+
+  secureblog_nginx:
+      build: ./nginx
+      volumes:
+        - ./secureblog/staticfiles:/var/www/static
+      ports:
+        - "80:80"
+      depends_on:
+        - secureblog
+      #  - secureblog_gunicorn
+
